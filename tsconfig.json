@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+      "target": "es2018",
+
+      "module": "ES2015",
+
+      "moduleResolution": "node",
+      "lib": [
+        "esnext",
+        "esnext.asynciterable",
+        "dom"
+      ],
+      "experimentalDecorators": true, // for vue-property-decorator
+      "esModuleInterop": true,
+      "allowJs": true,
+      "sourceMap": true,
+      "strict": true,
+      "noEmit": true,
+      "baseUrl": ".",
+      "paths": {
+        "~/*": [
+          "./*"
+        ],
+        "@/*": [
+          "./*"
+        ]
+      },
+      "types": [
+        "@types/node",
+        "@nuxt/types",
+        "@types/socket.io-client",
+        "@nuxtjs/axios",
+        "nuxt-i18n",
+      ]
+    },
+    "exclude": [
+      "node_modules",
+      ".nuxt",
+      "dist"
+    ]
+  }
